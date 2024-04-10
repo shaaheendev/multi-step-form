@@ -9,7 +9,6 @@ const emailField = document.getElementById("email");
 
 let contactName;
 let contactEmail;
-let optionsArray = [];
 let currentStep = 1;
 let passedSteps = 0;
 
