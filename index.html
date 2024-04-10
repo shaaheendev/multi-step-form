@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multi-Step Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./res/styles.css" />
+  </head>
+  <body>
+    <form action="" id="contact-form">
+      <section class="step1-form form-section" id="form-step-1">
+        <h2>Register</h2>
+        <label for="name"
+          >Name
+          <input
+            type="text"
+            id="name"
+            placeholder="enter your name"
+            name="name"
+            required
+          />
+        </label>
+        <label for="name"
+          >Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+          />
+        </label>
+        <button class="btn1 btn" type="button" id="btn1">Continue</button>
+      </section>
+      <section
+        action=""
+        class="step2-form form-section hidden"
+        id="form-step-2"
+      >
+        <h2>Which topics you are interested in?</h2>
+        <label for="software-development">
+          <input
+            class="topic-option"
+            type="checkbox"
+            id="software-development"
+            value="software-development"
+            name="topic"
+          />
+          <span class="option">Software Development</span>
+        </label>
+        <label for="user-experience">
+          <input
+            class="topic-option"
+            type="checkbox"
+            id="user-experience"
+            value="user-experience"
+            name="topic"
+          />
+          <span class="option">User Experience</span>
+        </label>
+        <label for="graphic-design">
+          <input
+            class="topic-option"
+            type="checkbox"
+            id="graphic-design"
+            value="graphic-design"
+            name="topic"
+          />
+          <span class="option">Graphic Design</span>
+        </label>
+        <button class="btn btn2" type="button" id="btn2">Continue</button>
+      </section>
+      <section
+        action=""
+        class="step3-form form-section hidden"
+        id="form-step-3"
+      >
+        <h2>Sumarry</h2>
+        <div class="show-name sumarry-part">
+          Name:
+          <spin class="name-container sumarry-content">Emily Johnson</spin>
+        </div>
+        <div class="show-email sumarry-part">
+          Email:
+          <span class="email-container sumarry-content"
+            >emily@emilyjohnsontl.com</span
+          >
+        </div>
+        <div class="show-topics sumarry-part">
+          Topics:
+          <ul class="topic-container sumarry-content"></ul>
+        </div>
+        <button class="btn btn3" type="submit">Continue</button>
+      </section>
+
+      <div class="step-show">
+        <span class="steps-text"
+          >Step <span id="current-step-text">1</span> of 3</span
+        >
+        <span class="steps">
+          <span class="step step1 current-step"></span>
+          <span class="step step2"></span>
+          <span class="step step3"></span>
+        </span>
+        <div></div>
+      </div>
+    </form>
+    <script src="./res/script.js"></script>
+  </body>
+</html>
