@@ -37,7 +37,7 @@ form {
 section {
   width: 45%;
   max-width: 450px;
-  min-width: 300px;
+  min-width: 250px;
   padding: 40px;
   background-color: var(--form-bg-color);
   border: 1px solid var(--border-color);
@@ -154,10 +154,12 @@ input::placeholder {
 }
 .steps-text {
   width: 10%;
+  min-width: 80px;
   color: var(--dark-text);
 }
 .steps {
   width: 15%;
+  min-width: 70px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -172,6 +174,7 @@ input::placeholder {
 }
 .step-show > div {
   width: 10%;
+  min-width: 80px;
 }
 
 .current-step {
@@ -187,6 +190,11 @@ input::placeholder {
 }
 @media (max-width: 400px) {
   section {
-    width: 90%;
+    width: 80%;
+    padding: 2%;
+  }
+  .step1-form input {
+    width: 95%;
+    padding: 0 1%;
   }
 }
