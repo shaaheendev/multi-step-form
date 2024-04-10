@@ -36,6 +36,8 @@ form {
 }
 section {
   width: 45%;
+  max-width: 360px;
+  min-width: 250px;
   padding: 40px;
   background-color: var(--form-bg-color);
   border: 1px solid var(--border-color);
